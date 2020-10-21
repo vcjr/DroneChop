@@ -11,7 +11,6 @@ const App = () => {
       <main className='py-3'>
       <Container>
         <h1>Welcome to DroneChop!</h1>
-        <img src={drone} className="App-logo" alt="logo" />
       </Container>
       </main>
       <Footer />
