@@ -12,6 +12,7 @@ const ProductScreen = ({ match }) => {
       <Link className="btn btn-primary my-3" to="/">
         Go Back
       </Link>
+      <h3>{product.name}</h3>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid />
@@ -47,13 +48,18 @@ const ProductScreen = ({ match }) => {
                 <Row>
                   <Col>Status:</Col>
                   <Col>
-                    <strong>{product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}</strong>
+                    <strong>
+                      {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                    </strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
-                <Button className="btn-block" type="button" disabled={product.countInStock === 0}>
+                <Button
+                  className="btn-block"
+                  type="button"
+                  disabled={product.countInStock === 0}>
                   Add To Cart
                 </Button>
               </ListGroup.Item>
