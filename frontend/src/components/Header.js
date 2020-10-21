@@ -6,7 +6,7 @@ import drone from "../drone.png";
 const Header = () => {
   return (
     <header>
-      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <Navbar.Brand href="/">
             <img src={drone} width="50" height="50" className="d-inline-block App-logo mr-2" alt="logo" />
