@@ -9,7 +9,6 @@ app.get("/", (req, res) => {
 
 app.get("/api/products", (req, res) => {
   res.json(products);
-  // res.send("API is running...");
 });
 
 app.get("/api/products/:id", (req, res) => {
